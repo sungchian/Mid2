@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,11 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_TURN){
-            if (resultCode == RESULT_OK){
-                Toast.makeText(this, "特殊功能", Toast.LENGTH_LONG).show();
-            }
-        }
+
     }
 
     @Override
@@ -27,30 +24,36 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void func1 (View view){
+    public void onClick1 (View view){
+        Button b1 = (Button) findViewById(R.id.b1);
         Intent intent = new Intent(this, Func1Activity.class);
-        startActivityForResult(intent, REQUEST_TURN);
+        startActivityForResult(intent, 1);
     }
-    public void func2 (View view){
+    public void onClick2 (View view){
+        Button b2 = (Button) findViewById(R.id.b2);
         Intent intent = new Intent(this, Func2Activity.class);
-        startActivityForResult(intent, REQUEST_TURN);
+        startActivityForResult(intent, 2);
     }
-    public void func3 (View view){
+    public void onClick3 (View view){
+        Button b3 = (Button) findViewById(R.id.b3);
         Intent intent = new Intent(this, Func3Activity.class);
-        startActivityForResult(intent, REQUEST_TURN);
-        Toast.makeText(this, "特殊功能", Toast.LENGTH_LONG).show();
+        startActivityForResult(intent, 3);
+
     }
-    public void func4 (View view){
+    public void onClick4 (View view){
+        Button b4 = (Button) findViewById(R.id.b4);
         Intent intent = new Intent(this, Func4Activity.class);
-        startActivityForResult(intent, REQUEST_TURN);
+        startActivityForResult(intent, 4);
     }
-    public void func5 (View view){
+    public void onClick5 (View view){
+        Button b5 = (Button) findViewById(R.id.b5);
         Intent intent = new Intent(this, Func5Activity.class);
-        startActivityForResult(intent, REQUEST_TURN);
+        startActivityForResult(intent, 5);
     }
-    public void func6 (View view){
+    public void onClick6 (View view){
+        Button b6 = (Button) findViewById(R.id.b6);
         Intent intent = new Intent(this, Func6Activity.class);
-        startActivityForResult(intent, REQUEST_TURN);
+        startActivityForResult(intent, 6);
     }
     public void func7 (View view){
         Intent intent = new Intent(this, Func7Activity.class);
