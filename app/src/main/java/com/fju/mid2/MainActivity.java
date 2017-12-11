@@ -24,33 +24,33 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onClick1 (View view){
+    public void func1 (View view){
         Button b1 = (Button) findViewById(R.id.b1);
         Intent intent = new Intent(this, Func1Activity.class);
         startActivityForResult(intent, 1);
     }
-    public void onClick2 (View view){
+    public void func2 (View view){
         Button b2 = (Button) findViewById(R.id.b2);
         Intent intent = new Intent(this, Func2Activity.class);
         startActivityForResult(intent, 2);
     }
-    public void onClick3 (View view){
+    public void func3 (View view){
         Button b3 = (Button) findViewById(R.id.b3);
         Intent intent = new Intent(this, Func3Activity.class);
         startActivityForResult(intent, 3);
 
     }
-    public void onClick4 (View view){
+    public void func4 (View view){
         Button b4 = (Button) findViewById(R.id.b4);
         Intent intent = new Intent(this, Func4Activity.class);
         startActivityForResult(intent, 4);
     }
-    public void onClick5 (View view){
+    public void func5 (View view){
         Button b5 = (Button) findViewById(R.id.b5);
         Intent intent = new Intent(this, Func5Activity.class);
         startActivityForResult(intent, 5);
     }
-    public void onClick6 (View view){
+    public void func6 (View view){
         Button b6 = (Button) findViewById(R.id.b6);
         Intent intent = new Intent(this, Func6Activity.class);
         startActivityForResult(intent, 6);
